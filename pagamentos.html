@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Venda</title>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body>
+  <div id="app" class="app">
+    <nav id="nav" class="nav nav--hided">
+      <div id="nav-close-btn" class="btn-icon">
+        <button>
+          <span class="material-icons-outlined --hover-to-white">
+            close
+          </span>
+        </button>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="--hover-to-white" href="./index.html">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="--hover-to-white" href="./produtos.html">Produtos</a>
+        </li>
+        <li class="nav__item">
+          <a class="--hover-to-white" href="./clientes.html">Clientes</a>
+        </li>
+        <li class="nav__item">
+          <a class="--hover-to-white" href="./pagamentos.html">Pagamento</a>
+        </li>
+        <li class="nav__item">
+          <a class="--hover-to-white" href="./vendas.html">Vendas</a>
+        </li>
+      </ul>
+      <div id="app-close-btn" class="btn-icon">
+        <button>
+          <span class="material-icons-outlined --hover-to-white">
+            arrow_back
+          </span>
+        </button>
+      </div>
+    </nav>
+    <main class="main">
+      <section class="main__tools">
+        <div id="nav-show-btn" class="btn-icon">
+          <button>
+            <span class="material-icons-outlined --hover-to-white">
+              menu
+            </span>
+          </button>
+        </div>
+        <div id="add-modal-show-btn" class="btn-icon">
+          <button>
+            <span class="material-icons-outlined --hover-to-white">
+              add
+            </span>
+          </button>
+        </div>
+      </section>
+      <section class="main__filter">
+        <h2>Pesquisar por Formas de Pagamento</h2>
+        <form class="main__filter__form" id="filter-form">
+          <div class="input-container">
+              <input type="hidden" name="type" value="search">
+              <input type="text" placeholder="Código" name="id">
+              <input type="text" placeholder="Nome" name="name">
+          </div>
+          <div class="submit-container">
+              <div class="btn-icon">
+                <button type="submit">
+                  <span class="material-icons-outlined --hover-to-white">
+                    search
+                  </span>
+                </button>
+              </div>
+          </div>
+        </form>
+      </section>
+      <section class="main__content">
+        <table id="data-table" class="main__content__data-table">
+          <thead>
+            <tr>
+              <th>Codigo</th>
+              <th>Nome</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+        <div id="add-modal" class="main__content__add-modal --display-none">
+          <form id="add-modal-form">
+            <div class="input-container">
+              <input type="hidden" name="type" value="insert">
+              <input type="text" placeholder="Código" disabled="true">
+              <input type="text" placeholder="Nome" name="name">
+            </div>
+            <div class="submit-container">
+              <div id="add-modal-confirm-btn" class="btn-icon">
+                <button type="submit">
+                  <span class="material-icons-outlined --hover-to-white">
+                    check
+                  </span>
+                </button>
+              </div>
+              <div id="add-modal-close-btn" class="btn-icon">
+                <button type="button">
+                  <span class="material-icons-outlined --hover-to-white">
+                    close
+                  </span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li>Fernando Henrique</li>
+        <li>+55 85 9 85680757</li>
+        <li>fernandomk6@gmail</li>
+        <li><a href="https://github.com/fernandomk6">GitHub</a></li>
+      </ul>
+    </footer>
+  </div>
+  <script src="./scripts/default-events.js"></script>
+  <script src="./scripts/add-modal-events.js"></script>
+  <script src="./scripts/payment.js"></script>
+</body>
+</html>
