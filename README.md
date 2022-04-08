@@ -1,7 +1,11 @@
 # Cadastro de venda  
 
 Sistema feito para praticar tanto tecnologias do backend como do frontend.  
-Relacionamento de tabelas, validações de dados e um layout legal 😎👍, essa é a ideia.  
+
+Sistema feito para praticar relacionamentos de tabela e um pouco de front e back end
+HTML semantico e CSS intermediario com flexbox e responsivo.
+Foi utilizado Javascript para manipular os eventos e fazer envios de requisições assincronas ao servidor, usando FETCH API. Backend com PHP. Basicamente recebendo as requisições da FETCH API e executando coisas no banco de dados MYSQL.    
+
 Mindset do projeto feito no >> [Figma](https://www.figma.com/file/XGyhUFe3IZ0F2Pt5gcxuJu/cadastro-de-venda?node-id=0%3A1) <<
 
 Tecnologias usadas
