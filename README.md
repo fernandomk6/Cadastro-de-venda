@@ -1,7 +1,5 @@
 # Cadastro de venda  
 
-Sistema feito para praticar tanto tecnologias do backend como do frontend.  
-
 Sistema feito para praticar relacionamentos de tabela e um pouco de front e back end
 HTML semantico e CSS intermediario com flexbox e responsivo.
 Foi utilizado Javascript para manipular os eventos e fazer envios de requisições assincronas ao servidor, usando FETCH API. Backend com PHP. Basicamente recebendo as requisições da FETCH API e executando coisas no banco de dados MYSQL.    
