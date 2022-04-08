@@ -11,4 +11,3 @@ Tecnologias usadas
 - [x] HTML
 - [x] CSS
 
-<img src="https://github.com/fernandomk6/Cadastro-de-venda/blob/main/img/Screenshot_1.jpg?raw=true" style="height: 500px; width:1000px;"/>
